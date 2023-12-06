@@ -48,7 +48,7 @@
         <div class="container-xxl position-relative p-0">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark px-4 px-lg-5 py-3 py-lg-0">
                 <a href="" class="navbar-brand p-0">
-                    <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>Restoran</h1>
+                    <h1 class="text-primary m-0"><i class="fa fa-utensils me-3"></i>RM. Nyaman</h1>
                     <!-- <img src="img/logo.png" alt="Logo"> -->
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -56,21 +56,21 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <div class="navbar-nav ms-auto py-0 pe-4">
-                        <a href="{% url 'index' %}" class="nav-item nav-link active">Home</a>
-                        <a href="{% url 'about' %}" class="nav-item nav-link">About</a>
-                        <a href="{% url 'service' %}" class="nav-item nav-link">Service</a>
+                        <a href="{% url 'index' %}" class="nav-item nav-link active">Beranda</a>
+                        <a href="{% url 'about' %}" class="nav-item nav-link">Tentang</a>
+                        <a href="{% url 'service' %}" class="nav-item nav-link">Layanan</a>
                         <a href="{% url 'menu' %}" class="nav-item nav-link">Menu</a>
                         <div class="nav-item dropdown">
-                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
+                            <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Halaman</a>
                             <div class="dropdown-menu m-0">
-                                <a href="{% url 'booking' %}" class="dropdown-item">Booking</a>
-                                <a href="{% url 'team' %}" class="dropdown-item">Our Team</a>
+                                <a href="{% url 'booking' %}" class="dropdown-item">Pemesanan</a>
+                                <a href="{% url 'team' %}" class="dropdown-item">Team Kami</a>
                                 <a href="{% url 'testimonial' %}" class="dropdown-item">Testimonial</a>
                             </div>
                         </div>
-                        <a href="{% url 'contact' %}" class="nav-item nav-link">Contact</a>
+                        <a href="{% url 'contact' %}" class="nav-item nav-link">Kontak</a>
                     </div>
-                    <a href="" class="btn btn-primary py-2 px-4">Book A Table</a>
+                    <a href="" class="btn btn-primary py-2 px-4">Pesan Meja</a>
                 </div>
             </nav>
 
@@ -80,7 +80,7 @@
                         <div class="col-lg-6 text-center text-lg-start">
                             <h1 class="display-3 text-white animated slideInLeft">Nikmati<br>Makanan Lezat Kami</h1>
                             <p class="text-white animated slideInLeft mb-4 pb-2">Rasakan Sebuah Kenikmatan Dalam Gigitan Pertama</p>
-                            <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Book A Table</a>
+                            <a href="" class="btn btn-primary py-sm-3 px-sm-5 me-3 animated slideInLeft">Pesan Meja</a>
                         </div>
                         <div class="col-lg-6 text-center text-lg-end overflow-hidden">
                             <img class="img-fluid" src="{% static 'img/hero.png' %}" alt="">
@@ -101,7 +101,7 @@
                             <div class="p-4">
                                 <i class="fa fa-3x fa-user-tie text-primary mb-4"></i>
                                 <h5>Master Chefs</h5>
-                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                                <p>Di Rumah Makan kami Terdapat Chef expert yang sudah ahli dalam bidangnya</p>
                             </div>
                         </div>
                     </div>
@@ -109,8 +109,8 @@
                         <div class="service-item rounded pt-3">
                             <div class="p-4">
                                 <i class="fa fa-3x fa-utensils text-primary mb-4"></i>
-                                <h5>Quality Food</h5>
-                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                                <h5>Makanan Berkualitas</h5>
+                                <p>Di ambil dan import dari bahan yang berkualitas dan sudah bersertifikasi HALAL</p>
                             </div>
                         </div>
                     </div>
@@ -118,8 +118,8 @@
                         <div class="service-item rounded pt-3">
                             <div class="p-4">
                                 <i class="fa fa-3x fa-cart-plus text-primary mb-4"></i>
-                                <h5>Online Order</h5>
-                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                                <h5>Pesan Online</h5>
+                                <p>Di Rumah Makan Kami juga sudah bisa mengantarkan pesanan secara online </p>
                             </div>
                         </div>
                     </div>
@@ -127,8 +127,8 @@
                         <div class="service-item rounded pt-3">
                             <div class="p-4">
                                 <i class="fa fa-3x fa-headset text-primary mb-4"></i>
-                                <h5>24/7 Service</h5>
-                                <p>Diam elitr kasd sed at elitr sed ipsum justo dolor sed clita amet diam</p>
+                                <h5>Ramah Pelayanan</h5>
+                                <p>Pelayanan Rumah Makan kami terjamin ramah dan sudah lulusan pesantren semua</p>
                             </div>
                         </div>
                     </div>
@@ -159,17 +159,17 @@
                         </div>
                     </div>
                     <div class="col-lg-6">
-                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">About Us</h5>
-                        <h1 class="mb-4">Welcome to <i class="fa fa-utensils text-primary me-2"></i>Restoran</h1>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos erat ipsum et lorem et sit, sed stet lorem sit.</p>
-                        <p class="mb-4">Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">Tentang kami</h5>
+                        <h1 class="mb-4">Welcome to <i class="fa fa-utensils text-primary me-2"></i>RM. Nyaman</h1>
+                        <p class="mb-4">Selamat datang di restoran kami! Kami senang bisa melayani Anda hari ini. Silakan duduk, santaplah makanan lezat kami, dan nikmati pengalaman kuliner yang luar biasa.</p>
+                        <p class="mb-4">Terima kasih atas kunjungan Anda!</p>
                         <div class="row g-4 mb-4">
                             <div class="col-sm-6">
                                 <div class="d-flex align-items-center border-start border-5 border-primary px-3">
                                     <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">15</h1>
                                     <div class="ps-4">
-                                        <p class="mb-0">Years of</p>
-                                        <h6 class="text-uppercase mb-0">Experience</h6>
+                                        <p class="mb-0">Tahun</p>
+                                        <h6 class="text-uppercase mb-0">Pengalaman</h6>
                                     </div>
                                 </div>
                             </div>
@@ -177,13 +177,13 @@
                                 <div class="d-flex align-items-center border-start border-5 border-primary px-3">
                                     <h1 class="flex-shrink-0 display-5 text-primary mb-0" data-toggle="counter-up">50</h1>
                                     <div class="ps-4">
-                                        <p class="mb-0">Popular</p>
+                                        <p class="mb-0">Populer</p>
                                         <h6 class="text-uppercase mb-0">Master Chefs</h6>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <a class="btn btn-primary py-3 px-5 mt-2" href="">Read More</a>
+                        <a class="btn btn-primary py-3 px-5 mt-2" href="">Baca Selengkapnya</a>
                     </div>
                 </div>
             </div>
@@ -195,8 +195,8 @@
         <div class="container-xxl py-5">
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Food Menu</h5>
-                    <h1 class="mb-5">Most Popular Items</h1>
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Menu Makanan</h5>
+                    <h1 class="mb-5">Menu Paling Favorit</h1>
                 </div>
                 <div class="tab-class text-center wow fadeInUp" data-wow-delay="0.1s">
                     <ul class="nav nav-pills d-inline-flex justify-content-center border-bottom mb-5">
@@ -204,8 +204,8 @@
                             <a class="d-flex align-items-center text-start mx-3 ms-0 pb-3 active" data-bs-toggle="pill" href="#tab-1">
                                 <i class="fa fa-coffee fa-2x text-primary"></i>
                                 <div class="ps-3">
-                                    <small class="text-body">Popular</small>
-                                    <h6 class="mt-n1 mb-0">Breakfast</h6>
+                                    <small class="text-body">Menu</small>
+                                    <h6 class="mt-n1 mb-0">Minuman</h6>
                                 </div>
                             </a>
                         </li>
@@ -213,8 +213,8 @@
                             <a class="d-flex align-items-center text-start mx-3 pb-3" data-bs-toggle="pill" href="#tab-2">
                                 <i class="fa fa-hamburger fa-2x text-primary"></i>
                                 <div class="ps-3">
-                                    <small class="text-body">Special</small>
-                                    <h6 class="mt-n1 mb-0">Launch</h6>
+                                    <small class="text-body">Menu</small>
+                                    <h6 class="mt-n1 mb-0">Burger</h6>
                                 </div>
                             </a>
                         </li>
@@ -222,8 +222,8 @@
                             <a class="d-flex align-items-center text-start mx-3 me-0 pb-3" data-bs-toggle="pill" href="#tab-3">
                                 <i class="fa fa-utensils fa-2x text-primary"></i>
                                 <div class="ps-3">
-                                    <small class="text-body">Lovely</small>
-                                    <h6 class="mt-n1 mb-0">Dinner</h6>
+                                    <small class="text-body">Menu</small>
+                                    <h6 class="mt-n1 mb-0">Makanan</h6>
                                 </div>
                             </a>
                         </li>
@@ -548,46 +548,47 @@
                 </div>
                 <div class="col-md-6 bg-dark d-flex align-items-center">
                     <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
-                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">Reservation</h5>
-                        <h1 class="text-white mb-4">Book A Table Online</h1>
+                        <h5 class="section-title ff-secondary text-start text-primary fw-normal">Reservasi</h5>
+                        <h1 class="text-white mb-4">Pesan Meja Secara Online</h1>
                         <form>
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
                                         <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                        <label for="name">Your Name</label>
+                                        <label for="name">Nama</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
                                         <input type="email" class="form-control" id="email" placeholder="Your Email">
-                                        <label for="email">Your Email</label>
+                                        <label for="email">Email</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating date" id="date3" data-target-input="nearest">
                                         <input type="text" class="form-control datetimepicker-input" id="datetime" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
-                                        <label for="datetime">Date & Time</label>
+                                        <label for="datetime">Tanggal & Waktu</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating">
                                         <select class="form-select" id="select1">
-                                          <option value="1">People 1</option>
-                                          <option value="2">People 2</option>
-                                          <option value="3">People 3</option>
+                                          <option value="1">1 Orang</option>
+                                          <option value="2">2 Orang</option>
+                                          <option value="3">3 Orang</option>
+                                          <option value="3">> 3 Orang</option>
                                         </select>
-                                        <label for="select1">No Of People</label>
+                                        <label for="select1">Kursi</label>
                                       </div>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
                                         <textarea class="form-control" placeholder="Special Request" id="message" style="height: 100px"></textarea>
-                                        <label for="message">Special Request</label>
+                                        <label for="message">Request</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Book Now</button>
+                                    <button class="btn btn-primary w-100 py-3" type="submit">Pesan Sekarang</button>
                                 </div>
                             </div>
                         </form>
@@ -620,8 +621,8 @@
         <div class="container-xxl pt-5 pb-3">
             <div class="container">
                 <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Team Members</h5>
-                    <h1 class="mb-5">Our Master Chefs</h1>
+                    <h5 class="section-title ff-secondary text-center text-primary fw-normal">Anggota Teams</h5>
+                    <h1 class="mb-5">Chef Utama Kami</h1>
                 </div>
                 <div class="row g-4">
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
@@ -691,7 +692,7 @@
             <div class="container">
                 <div class="text-center">
                     <h5 class="section-title ff-secondary text-center text-primary fw-normal">Testimonial</h5>
-                    <h1 class="mb-5">Our Clients Say!!!</h1>
+                    <h1 class="mb-5">Menurut Pelanggan kami!!!</h1>
                 </div>
                 <div class="owl-carousel testimonial-carousel">
                     <div class="testimonial-item bg-transparent border rounded p-4">
@@ -749,18 +750,18 @@
             <div class="container py-5">
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Company</h4>
-                        <a class="btn btn-link" href="">About Us</a>
-                        <a class="btn btn-link" href="">Contact Us</a>
-                        <a class="btn btn-link" href="">Reservation</a>
-                        <a class="btn btn-link" href="">Privacy Policy</a>
-                        <a class="btn btn-link" href="">Terms & Condition</a>
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Perusahaan</h4>
+                        <a class="btn btn-link" href="">Tentan kami</a>
+                        <a class="btn btn-link" href="">Hubungi Kami</a>
+                        <a class="btn btn-link" href="">Reservasi</a>
+                        <a class="btn btn-link" href="">Kebijakan Pribadi</a>
+                        <a class="btn btn-link" href="">Syarat & Ketentuan</a>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Contact</h4>
-                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>123 Street, New York, USA</p>
-                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>info@example.com</p>
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Kontak</h4>
+                        <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Jln. Sudirman, Pamekasan</p>
+                        <p class="mb-2"><i class="fa fa-phone-alt me-3"></i>+62 080808080</p>
+                        <p class="mb-2"><i class="fa fa-envelope me-3"></i>RMNyaman@gmail.com</p>
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
@@ -769,18 +770,18 @@
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Opening</h4>
-                        <h5 class="text-light fw-normal">Monday - Saturday</h5>
-                        <p>09AM - 09PM</p>
-                        <h5 class="text-light fw-normal">Sunday</h5>
-                        <p>10AM - 08PM</p>
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Jam Buka</h4>
+                        <h5 class="text-light fw-normal">Senin-Sabtu </h5>
+                        <p>09.00 - 21.00</p>
+                        <h5 class="text-light fw-normal">Minggu</h5>
+                        <p>08.00 - 22.00</p>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Newsletter</h4>
-                        <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Buletin</h4>
+                        <p>Untuk Saat Ini Kami Belum Menyiapkan Buletin. Mohon Maaf Atas Ketidak Nyamanan Anda</p>
                         <div class="position-relative mx-auto" style="max-width: 400px;">
-                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
-                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">SignUp</button>
+                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Email">
+                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Daftar</button>
                         </div>
                     </div>
                 </div>
@@ -789,14 +790,14 @@
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">Zigrul</a>, All Right Reserved. 
+                            &copy; <a class="border-bottom" href="#">RM.Nyaman</a>, All Right Reserved. 
 							Designed By Me
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
-                                <a href="">Home</a>
+                                <a href="">Beranda</a>
                                 <a href="">Cookies</a>
-                                <a href="">Help</a>
+                                <a href="">Bantuan</a>
                                 <a href="">FQAs</a>
                             </div>
                         </div>
