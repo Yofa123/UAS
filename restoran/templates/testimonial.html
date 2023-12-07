@@ -77,8 +77,8 @@
                     <h1 class="display-3 text-white mb-3 animated slideInDown">Testimonial</h1>
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb justify-content-center text-uppercase">
-                            <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                            <li class="breadcrumb-item"><a href="#">Beranda</a></li>
+                            <li class="breadcrumb-item"><a href="#">Halaman</a></li>
                             <li class="breadcrumb-item text-white active" aria-current="page">Testimonial</li>
                         </ol>
                     </nav>
@@ -98,45 +98,45 @@
                 <div class="owl-carousel testimonial-carousel">
                     <div class="testimonial-item bg-transparent border rounded p-4">
                         <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                        <p>Makanannya Sangat Lezat dan Enak Sekali Saya Sangat Suka</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/testimonial-1.jpg' %}" style="width: 50px; height: 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/jokowi.jpg' %}" style="width: 50px; height: 50px;">
                             <div class="ps-3">
-                                <h5 class="mb-1">Client Name</h5>
-                                <small>Profession</small>
+                                <h5 class="mb-1">Jokowi Dodo</h5>
+                                <small>President RI</small>
                             </div>
                         </div>
                     </div>
                     <div class="testimonial-item bg-transparent border rounded p-4">
                         <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                        <p>Tempat yang Megah dan Juga Makanannya yang Bikin Nagih Recommended!</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/testimonial-2.jpg' %}" style="width: 50px; height: 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/raffi.jpg' %}" style="width: 50px; height: 50px;">
                             <div class="ps-3">
-                                <h5 class="mb-1">Client Name</h5>
-                                <small>Profession</small>
+                                <h5 class="mb-1">Raffi Ahmad</h5>
+                                <small>Aktor</small>
                             </div>
                         </div>
                     </div>
                     <div class="testimonial-item bg-transparent border rounded p-4">
                         <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                        <p>Makannya Sangat Lezat Tapi Saran Saya Tambahkan Menu Banteng Tumis😁😁</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/testimonial-3.jpg' %}" style="width: 50px; height: 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/puan.jpg' %}" style="width: 50px; height: 50px;">
                             <div class="ps-3">
-                                <h5 class="mb-1">Client Name</h5>
-                                <small>Profession</small>
+                                <h5 class="mb-1">Puan Maharani</h5>
+                                <small>Politikus</small>
                             </div>
                         </div>
                     </div>
                     <div class="testimonial-item bg-transparent border rounded p-4">
                         <i class="fa fa-quote-left fa-2x text-primary mb-3"></i>
-                        <p>Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam</p>
+                        <p>Semenjak Kejadian Itu Saya Jadi Sering Makan Disini Karena Mirip Dengan Masakan Istri Saya</p>
                         <div class="d-flex align-items-center">
-                            <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/testimonial-4.jpg' %}" style="width: 50px; height: 50px;">
+                            <img class="img-fluid flex-shrink-0 rounded-circle" src="{% static 'img/sambo.jpg' %}" style="width: 50px; height: 50px;">
                             <div class="ps-3">
-                                <h5 class="mb-1">Client Name</h5>
-                                <small>Profession</small>
+                                <h5 class="mb-1">Ferdy Sambo</h5>
+                                <small>Mantan Polri</small>
                             </div>
                         </div>
                     </div>
@@ -152,9 +152,9 @@
                 <div class="row g-5">
                     <div class="col-lg-3 col-md-6">
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Perusahaan</h4>
-                        <a class="btn btn-link" href="">Tentan kami</a>
-                        <a class="btn btn-link" href="">Hubungi Kami</a>
-                        <a class="btn btn-link" href="">Reservasi</a>
+                        <a class="btn btn-link" href="{% url 'about' %}">Tentang kami</a>
+                        <a class="btn btn-link" href="{% url 'contact' %}">Hubungi Kami</a>
+                        <a class="btn btn-link" href="{% url 'service' %}">Layanan kami</a>
                         <a class="btn btn-link" href="">Kebijakan Pribadi</a>
                         <a class="btn btn-link" href="">Syarat & Ketentuan</a>
                     </div>
