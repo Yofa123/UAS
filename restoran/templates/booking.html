@@ -68,7 +68,7 @@
                         </div>
                         <a href="{% url 'contact' %}" class="nav-item nav-link">Kontak</a>
                     </div>
-                    <a href="" class="btn btn-primary py-2 px-4">Pesan Meja</a>
+                    <a href="{% url 'booking' %}" class="btn btn-primary py-2 px-4">Pesan Meja</a>
                 </div>
             </nav>
 
@@ -140,8 +140,8 @@
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-primary w-100 py-3" type="submit">Pesan Sekarang</button>
-                                </div>
+                                    <a href="{% url 'sukses' %}" class="btn btn-primary w-100 py-3">Pesan Sekarang</a>
+                                </div>                                
                             </div>
                         </form>
                     </div>
@@ -219,9 +219,9 @@
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
-                                <a href="">Beranda</a>
+                                <a href="{% url 'index' %}">Beranda</a>
                                 <a href="">Cookies</a>
-                                <a href="">Bantuan</a>
+                                <a href="{% url 'contact' %}">Bantuan</a>
                                 <a href="">FQAs</a>
                             </div>
                         </div>

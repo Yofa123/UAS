@@ -27,5 +27,6 @@ urlpatterns = [
     path('service/', service, name='service'),
     path('team/', team, name='team'),
     path('testimonial/', testimonial, name='testimonial'),
+    path('sukses/', sukses, name='sukses'),
     path('admin/', admin.site.urls),
 ]

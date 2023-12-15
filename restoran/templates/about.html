@@ -68,7 +68,7 @@
                         </div>
                         <a href="{% url 'contact' %}" class="nav-item nav-link">Kontak</a>
                     </div>
-                    <a href="" class="btn btn-primary py-2 px-4">Pesan Meja</a>
+                    <a href="{% url 'booking' %}" class="btn btn-primary py-2 px-4">Pesan Meja</a>
                 </div>
             </nav>
 
@@ -180,7 +180,7 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
                         <div class="team-item text-center rounded overflow-hidden">
                             <div class="rounded-circle overflow-hidden m-4">
-                                <img class="img-fluid" src="{% static 'img/renata1.jpg' %}" alt="">
+                                <img class="img-fluid" src="{% static 'img/renata.jpg' %}" alt="">
                             </div>
                             <h5 class="mb-0">Puti Renata Ratnasari M.</h5>
                             <small>Chef</small>
@@ -261,9 +261,9 @@
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
-                                <a href="">Beranda</a>
+                                <a href="{% url 'index' %}">Beranda</a>
                                 <a href="">Cookies</a>
-                                <a href="">Bantuan</a>
+                                <a href="{% url 'contact' %}">Bantuan</a>
                                 <a href="">FQAs</a>
                             </div>
                         </div>
