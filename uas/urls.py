@@ -19,14 +19,6 @@ from django.urls import include, path
 from restoran.views import *
 
 urlpatterns = [
-    path('', index, name='index'),
-    path('about/', about, name='about'),
-    path('booking/', booking, name='booking'),
-    path('contact/', contact, name='contact'),
-    path('menu/', menu, name='menu'),
-    path('service/', service, name='service'),
-    path('team/', team, name='team'),
-    path('testimonial/', testimonial, name='testimonial'),
-    path('sukses/', sukses, name='sukses'),
+    path('', include('restoran.urls')),
     path('admin/', admin.site.urls),
 ]

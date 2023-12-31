@@ -64,6 +64,7 @@
                                 <a href="{% url 'booking' %}" class="dropdown-item">Pemesanan</a>
                                 <a href="{% url 'team' %}" class="dropdown-item">Team kami</a>
                                 <a href="{% url 'testimonial' %}" class="dropdown-item">Testimonial</a>
+                                <a href="{% url 'members' %}" class="dropdown-item">Members</a>
                             </div>
                         </div>
                         <a href="{% url 'contact' %}" class="nav-item nav-link">Kontak</a>
@@ -93,7 +94,7 @@
             <div class="row g-0">
                 <div class="col-md-6">
                     <div class="video">
-                        <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://youtu.be/NC9KlaxtfLg?si=8BIX020tKEyQ44Qj" data-bs-target="#videoModal">
+                        <button type="button" class="btn-play" data-bs-toggle="modal" data-src="https://www.youtube.com/watch?v=NC9KlaxtfLg&t=11s" data-bs-target="#videoModal">
                             <span></span>
                         </button>
                     </div>
@@ -102,12 +103,12 @@
                     <div class="p-5 wow fadeInUp" data-wow-delay="0.2s">
                         <h5 class="section-title ff-secondary text-start text-primary fw-normal">Reservasi</h5>
                         <h1 class="text-white mb-4">Pesan Meja Secara Online</h1>
-                        <form>
+                        <form name="formPemesanan" action="#" method="post" onsubmit="return validateForm()">
                             <div class="row g-3">
                                 <div class="col-md-6">
                                     <div class="form-floating">
-                                        <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                        <label for="name">Nama</label>
+                                        <input type="text" class="form-control" id="nama" placeholder="Your Name" required minlength="2">
+                                        <label for="nama">Nama</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -118,8 +119,8 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="form-floating date" id="date3" data-target-input="nearest">
-                                        <input type="text" class="form-control datetimepicker-input" id="datetime" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
-                                        <label for="datetime">Tanggal & Waktu</label>
+                                        <input type="text" class="form-control datetimepicker-input" id="tanggal" placeholder="Date & Time" data-target="#date3" data-toggle="datetimepicker" />
+                                        <label for="tangal">Tanggal & Waktu</label>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
@@ -135,12 +136,12 @@
                                 </div>
                                 <div class="col-12">
                                     <div class="form-floating">
-                                        <textarea class="form-control" placeholder="Special Request" id="message" style="height: 100px"></textarea>
-                                        <label for="message">Request</label>
+                                        <textarea class="form-control" placeholder="Special Request" id="pesan" style="height: 100px"></textarea>
+                                        <label for="pesan">Request</label>
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <a href="{% url 'sukses' %}" class="btn btn-primary w-100 py-3">Pesan Sekarang</a>
+                                    <button class="btn btn-primary w-100 py-3">Pesan Sekarang</button>
                                 </div>                                
                             </div>
                         </form>
@@ -178,8 +179,8 @@
                         <a class="btn btn-link" href="{% url 'about' %}">Tentang kami</a>
                         <a class="btn btn-link" href="{% url 'contact' %}">Hubungi Kami</a>
                         <a class="btn btn-link" href="{% url 'service' %}">Layanan kami</a>
-                        <a class="btn btn-link" href="">Kebijakan Pribadi</a>
-                        <a class="btn btn-link" href="">Syarat & Ketentuan</a>
+                        <a class="btn btn-link" href="{% url 'heyy' %}">Kebijakan Pribadi</a>
+                        <a class="btn btn-link" href="{% url 'heyy' %}">Syarat & Ketentuan</a>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Kontak</h4>
@@ -189,8 +190,8 @@
                         <div class="d-flex pt-2">
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-twitter"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-facebook-f"></i></a>
+                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-instagram"></i></a>
                             <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-youtube"></i></a>
-                            <a class="btn btn-outline-light btn-social" href=""><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -201,11 +202,10 @@
                         <p>08.00 - 22.00</p>
                     </div>
                     <div class="col-lg-3 col-md-6">
-                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Buletin</h4>
-                        <p>Untuk Saat Ini Kami Belum Menyiapkan Buletin. Mohon Maaf Atas Ketidak Nyamanan Anda</p>
+                        <h4 class="section-title ff-secondary text-start text-primary fw-normal mb-4">Members</h4>
+                        <p>Jadilah Bagian Member dari Kami dan Dapatkan Keuntungannya</p>
                         <div class="position-relative mx-auto" style="max-width: 400px;">
-                            <input class="form-control border-primary w-100 py-3 ps-4 pe-5" type="text" placeholder="Email">
-                            <button type="button" class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2">Daftar</button>
+                            <a href="{% url 'members' %}" class="btn btn-primary py-2">Daftar</a>
                         </div>
                     </div>
                 </div>
@@ -220,9 +220,9 @@
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
                                 <a href="{% url 'index' %}">Beranda</a>
-                                <a href="">Cookies</a>
+                                <a href="#">Cookies</a>
                                 <a href="{% url 'contact' %}">Bantuan</a>
-                                <a href="">FQAs</a>
+                                <a href="#">FQAs</a>
                             </div>
                         </div>
                     </div>
@@ -250,6 +250,36 @@
 
     <!-- Template Javascript -->
     <script src="{% static 'js/main.js' %}"></script>
+
+    <script>
+        function validateForm() {
+            if (document.forms["formPemesanan"]["nama"].value == "") {
+                alert("Nama Tidak Boleh Kosong");
+                document.forms["formPemesanan"]["nama"].focus();
+                return false;
+            }
+            if (document.forms["formPemesanan"]["email"].value == "") {
+                alert("Email Tidak Boleh Kosong");
+                document.forms["formPemesanan"]["email"].focus();
+                return false;
+            }
+            if (document.forms["formPemesanan"]["tanggal"].value == "") {
+                alert("Tanggal Tidak Boleh Kosong");
+                document.forms["formPemesanan"]["tanggal"].focus();
+                return false;
+            }
+            if (document.forms["formPemesanan"]["select1"].value == "") {
+                alert("Kursi Tidak Boleh Kosong");
+                document.forms["formPemesanan"]["select1"].focus();
+                return false;
+            }
+            if (document.forms["formPemesanan"]["pesan"].value == "") {
+                alert("Pesan Tidak Boleh Kosong");
+                document.forms["formPemesanan"]["pesan"].focus();
+                return false;
+            }
+        }
+    </script>
 </body>
 
 </html>
