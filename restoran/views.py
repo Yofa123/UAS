@@ -63,9 +63,6 @@ def team(request):
 def testimonial(request):
     template = loader.get_template('testimonial.html')
     return HttpResponse(template.render())
-def sukses(request):
-    template = loader.get_template('sukses.html')
-    return HttpResponse(template.render())
 def heyy(request):
     template = loader.get_template('heyy.html')
     return HttpResponse(template.render())
